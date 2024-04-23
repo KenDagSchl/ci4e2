@@ -1,0 +1,18 @@
+table{
+    text-align: left;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+}
+
+.coupon input {
+    width: 400px;
+    text-align: center;
+}

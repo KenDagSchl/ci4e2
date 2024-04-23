@@ -5,7 +5,8 @@
                <div class="col-md-4">
                    <div class="full">
                       <div class="logo_footer">
-                        <a href="#"><img width="210" src="homefile/images/logo.png" alt="#" /></a>
+                        <a href="#"><img width="210" src="<?= base_url('homefile/images/logo.png') ?>" alt="#" /></a>
+                        
                       </div>
                       <div class="information_f">
                         <p><strong>ADDRESS:</strong> </p>

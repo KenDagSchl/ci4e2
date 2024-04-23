@@ -17,9 +17,10 @@
       <!-- font awesome style -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- Custom styles for this template -->
-      <link href="homefile/css/style.css" rel="stylesheet" />
+      <link href="<?= base_url('homefile/css/style.css') ?>" rel="stylesheet" />
       <!-- responsive style -->
-      <link href="homefile/css/responsive.css" rel="stylesheet" />
+      <link href="<?= base_url('homefile/css/responsive.css') ?>" rel="stylesheet" />
+
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 
@@ -31,7 +32,7 @@
          
       <section class="slider_section ">
             <div class="slider_bg_box">
-               <img src="homefile/images/slider-bg.jpg" alt="">
+            <img src="<?= base_url('homefile/images/slider-bg.jpg') ?>" alt="">
             </div>
             <div id="customCarousel1" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
@@ -126,11 +127,11 @@
          
         
          <!-- footer start -->
-        @include('partials.footer')
+         <?= $this->include('partials/footer') ?>
       <!-- footer end -->
      
         <!-- custom js -->
-        <script src="homefile/js/custom.js"></script>
+        <script src="<?= base_url('homefile/js/custom.js') ?>"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.10/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

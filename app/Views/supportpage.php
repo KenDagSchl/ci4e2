@@ -17,9 +17,9 @@
       <!-- font awesome style -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- Custom styles for this template -->
-      <link href="homefile/css/style.css" rel="stylesheet" />
+      <link href="<?= base_url('homefile/css/style.css') ?>" rel="stylesheet" />
       <!-- responsive style -->
-      <link href="homefile/css/responsive.css" rel="stylesheet" />
+      <link href="<?= base_url('homefile/css/responsive.css') ?>" rel="stylesheet" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
       
@@ -28,7 +28,7 @@
    </head>
    <body>
         <!-- header section strats -->
-        @include('partials.navbar')
+        <?= $this->include('partials/navbar') ?>
         <!-- end header section -->
 
        
@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        @include('partials.footer')
+        <?= $this->include('partials/footer') ?>
 
         <style>
 

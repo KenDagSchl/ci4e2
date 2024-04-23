@@ -17,9 +17,9 @@
       <!-- font awesome style -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- Custom styles for this template -->
-      <link href="homefile/css/style.css" rel="stylesheet" />
+      <link href="<?= base_url('homefile/css/style.css') ?>" rel="stylesheet" />
       <!-- responsive style -->
-      <link href="homefile/css/responsive.css" rel="stylesheet" />
+      <link href="<?= base_url('homefile/css/responsive.css') ?>" rel="stylesheet" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
       
@@ -30,7 +30,7 @@
 
    
    <!-- header section strats -->
-   @include('partials.navbar')
+   <?= $this->include('partials/navbar') ?>
     <!-- end header section -->
 
        
@@ -122,7 +122,7 @@
     
             <div class="product-card">
                 <a href="{{ url('/description') }}">
-                    <img src="homefile/images/everyday1.jpg" alt="Product Name">
+                <img src="<?= base_url('homefile/images/everyday1.jpg') ?>" alt="Product Name">
                 </a>
                 <h6>THE CREW <br> TSHIRT</h6>
                 <br>
@@ -134,7 +134,7 @@
 
             <div class="product-card">
             <a href="{{ url('/description') }}">
-                    <img src="homefile/images/everyday2.jpg" alt="Product Name">
+            <img src="<?= base_url('homefile/images/everyday2.jpg') ?>" alt="Product Name">
                 </a><h6>GREAT THINGS TSHIRT</h6>
                 <br>
                 <h6>Large<h6>
@@ -145,7 +145,7 @@
 
             <div class="product-card">
                 <a href="{{ url('/description') }}">
-                    <img src="homefile/images/everyday3.jpg" alt="Product Name">
+                <img src="<?= base_url('homefile/images/everyday3.jpg') ?>" alt="Product Name">
                 </a>
                 <h6>EVERYDAY BLK TSHIRT</h6>
                 <br>
@@ -156,7 +156,7 @@
             </div>
 
             <div class="product-card">
-                <img src="homefile/images/shorts1.jpg" alt="Product Name">
+            <img src="<?= base_url('homefile/images/shorts1.jpg') ?>" alt="Product Name">
                 <h6>EVERYDAY WHT SHORTS</h6>
                 <br>
                 <h6>Large<h6>
@@ -166,7 +166,7 @@
             </div>
 
             <div class="product-card">
-                <img src="homefile/images/shorts2.jpg" alt="Product Name">
+            <img src="<?= base_url('homefile/images/shorts2.jpg') ?>" alt="Product Name">
                 <h6>EVERYDAY BROWN SHORTS</h6>
                 <br>
                 <h6>Small<h6>
@@ -176,7 +176,7 @@
             </div>
 
             <div class="product-card">
-                <img src="homefile/images/tote1.jpg" alt="Product Name">
+            <img src="<?= base_url('homefile/images/tote1.jpg') ?>" alt="Product Name">
                 <h6>EVERY PLAIN TOTE BAG</h6>
                 <br>
                 <br>
@@ -187,7 +187,7 @@
             </div>
 
             <div class="product-card">
-                <img src="homefile/images/tote2.jpg" alt="Product Name">
+            <img src="<?= base_url('homefile/images/tote2.jpg') ?>" alt="Product Name">
                 <h6>EVERYDAY WHT TOTE BAG</h6>
                 <br>
                 <br>
@@ -199,7 +199,7 @@
             </div>
 
             <div class="product-card">
-                <img src="homefile/images/tote3.jpg" alt="Product Name">
+            <img src="<?= base_url('homefile/images/tote3.jpg') ?>" alt="Product Name">
                 <h6>EVERY BROWN TOTE BAG</h6>
                 <br>
                 <br>
@@ -214,7 +214,7 @@
 </div>
 
 <br>
-@include('partials.footer')
+<?= $this->include('partials/navbar') ?>
 
     <style>
 
