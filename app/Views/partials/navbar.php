@@ -38,7 +38,7 @@
                             </li> -->
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url('/home/home') ?>">Customize</a>
+                                <a class="nav-link" href="<?= base_url('/home/customize') ?>">Customize</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= base_url('/home/support') ?>">Support</a>

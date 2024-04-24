@@ -18,7 +18,7 @@ class Home extends BaseController
     }
     public function customize(): string
     {
-        return view('#');
+        return view('customizepage');
     }
     public function support(): string
     {

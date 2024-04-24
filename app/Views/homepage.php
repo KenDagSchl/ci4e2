@@ -123,7 +123,7 @@
       </section>
          <!-- end slider section -->
          
-         @include('partials.content')
+         <?= $this->include('partials/content') ?>
          
         
          <!-- footer start -->

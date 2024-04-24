@@ -2,8 +2,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="cont/global.css" />
-    <link rel="stylesheet" href="cont/index.css" />
+    
+    <link href="<?= base_url('cont/global.css') ?>" rel="stylesheet" />
+    <link href="<?= base_url('cont/index.css') ?>" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500;600;700&display=swap"
@@ -32,9 +33,9 @@
                     class="main-icon"
                     loading="eager"
                     alt=""
-                    src="cont/images/main@2x.png"
+                    src="<?= base_url('cont/images/main@2x.png') ?>"
                     />
-
+                    
                     <div class="link-node">
                     <h2 class="main3">Custom artwork &review</h2>
                     <div class="main4">
@@ -49,7 +50,7 @@
                         </span>
                     </div>
                     </div>
-                    <img class="main-icon1" alt="" src="cont/images/main-1@2x.png" />
+                    <img class="main-icon1" alt="" src="<?= base_url('cont/images/main-1@2x.png') ?>" />
                 </div>
                 <div class="link-node1">
                     <h2 class="main5">Add your shirt design</h2>
@@ -92,7 +93,7 @@
                             <img
                             class="main-icon2"
                             alt=""
-                            src="cont/images/main-2@2x.png"
+                            src="<?= base_url('cont/images/main-2@2x.png') ?>"
                             />
                         </div>
                         <h2 class="main7">Enjoy your product</h2>
