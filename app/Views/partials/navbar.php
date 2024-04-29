@@ -1,10 +1,10 @@
 <head>
 
-      <!-- Custom styles for this template -->
-      <link href="navbar/css/style.css" rel="stylesheet" />
-      <!-- responsive style -->
-      <link href="navbar/css/responsive.css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <!-- Custom styles for this template -->
+    <link href="<?= base_url('navbar/css/style.css') ?>" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="<?= base_url('navbar/css/responsive.css') ?>" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
 </head>
 
@@ -44,7 +44,10 @@
                                 <a class="nav-link" href="<?= base_url('/home/support') ?>">Support</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url('/home/about') ?>">About Us</a>
+                                <a class="nav-link" href="<?= base_url('/home/about') ?>">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url('/home/inventory') ?>">Inventory</a>
                             </li>
                             </ul>
                             <ul class="navbar-nav">

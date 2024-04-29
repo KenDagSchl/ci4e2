@@ -28,4 +28,16 @@ class Home extends BaseController
     {
         return view('about');
     }
+    public function inventory(): string
+    {
+        return view('inventory');
+    }
+    public function add(): string
+    {
+        return view('addproduct');
+    }
+    public function edit(): string
+    {
+        return view('editproduct');
+    }
 }

@@ -1,0 +1,18 @@
+let this be the details page for copilot.
+
+database name: everyday
+
+table name: product
+
+CREATE TABLE everyday.product (
+    product_id INT(255) NOT NULL AUTO_INCREMENT,
+    product_name VARCHAR(500) NOT NULL,
+    description VARCHAR(5000) NULL,
+    price DOUBLE NOT NULL,
+    stock_qty INT(255) NOT NULL,
+    size VARCHAR(255) NOT NULL,
+    product_type VARCHAR(255) NOT NULL,
+    color VARCHAR(255) NOT NULL,
+    critical_percentage DOUBLE NOT NULL,
+    PRIMARY KEY (product_id)
+) ENGINE = InnoDB;
