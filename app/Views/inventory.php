@@ -87,7 +87,8 @@
                         <td><?= $product->product_type ?></td>
                         <td><?= $product->color ?></td>
                         <td><?= $product->critical_percentage ?></td>
-                        <td><a href="<?= site_url('ProductController/update/' . $product->product_id) ?>">Update</a></td>
+                        <td><a href="<?= site_url('ProductController/edit/' . $product->product_id) ?>">Update</a></td>
+                        
                         <td><a href="<?= site_url('ProductController/delete/' . $product->product_id) ?>">Delete</a></td>
                 <?php endforeach; ?>
             </tbody>
