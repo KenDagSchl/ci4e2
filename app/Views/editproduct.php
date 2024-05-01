@@ -26,23 +26,6 @@
 </head>
 <body>
     <?= $this->include('partials/navbar') ?>
-<?php 
-/*
-        CREATE TABLE everyday.product (
-            product_id INT(255) NOT NULL AUTO_INCREMENT,
-            product_name VARCHAR(500) NOT NULL,
-            description VARCHAR(5000) NULL,
-            image_url VARCHAR(5000) NOT NULL,
-            price DOUBLE NOT NULL,
-            stock_qty INT(255) NOT NULL,
-            size VARCHAR(255) NOT NULL,
-            product_type VARCHAR(255) NOT NULL,
-            color VARCHAR(255) NOT NULL,
-            critical_percentage DOUBLE NOT NULL,
-            PRIMARY KEY (product_id)
-        ) ENGINE = InnoDB;
-        */
-?>
 <form action="<?= base_url('ProductController/update') ?>" method="post">
     <input type="hidden" name="product_id" value="<?= $product['product_id'] ?>">
 
@@ -51,6 +34,9 @@
 
     <label for="description">Description</label>
     <textarea id="description" name="description"><?= $product['description'] ?></textarea>
+
+    <label for="image_url">Image URL</label>
+    <input type="text" id="image_url" name="image_url" value="<?= $product['image_url'] ?>">
 
     <label for="price">Price</label>
     <input type="number" id="price" name="price" value="<?= $product['price'] ?>">
@@ -72,7 +58,6 @@
 
     <button type="submit">Update</button>
 </form>
-
     <?= $this->include('partials/footer') ?>
 </body>
 </html>

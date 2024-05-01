@@ -20,10 +20,9 @@
       <link href="<?= base_url('homefile/css/style.css') ?>" rel="stylesheet" />
       <!-- responsive style -->
       <link href="<?= base_url('homefile/css/responsive.css') ?>" rel="stylesheet" />
-
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+      
    </head>
    <body>
         <!-- header section strats -->
@@ -126,49 +125,6 @@
       <!-- end slider section -->
          
       <?= $this->include('partials/content') ?>
-      <?php
-      // Load the database library
-      $database = \Config\Database::connect();
-
-      // Get the products from the database
-      $query = $database->query('SELECT * FROM product');
-      $products = $query->getResultArray();
-      ?>
-        
-      <section class="product_carousel">
-         <div class="container">
-         <div class="row">
-         <div class="col-md-12">
-         <h2>Featured Products</h2>
-         <div id="productCarousel" class="carousel slide mx-auto" data-ride="carousel">
-            <div class="carousel-inner">
-            <?php foreach ($products as $key => $product) : ?>
-            <div class="carousel-item <?= $key === 0 ? 'active' : '' ?>">
-            <div class="row">
-               <div class="col-md-8 mx-auto">
-               <h3><?= $product['product_name'] ?></h3>
-               <p><?= $product['description'] ?></p>
-               <img src="<?= $product['image_url'] ?>" alt="<?= $product['product_name'] ?>">
-               <a href="" class="btn btn-primary">Buy Now</a>
-               </div>
-            </div>
-            </div>
-            <?php endforeach; ?>
-            </div>
-            <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-         </div>
-         </div>
-         </div>
-         </div>
-      </section>
-
 
          <!-- footer start -->
          <?= $this->include('partials/footer') ?>

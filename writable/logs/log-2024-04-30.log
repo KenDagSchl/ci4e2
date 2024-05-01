@@ -1,0 +1,117 @@
+CRITICAL - 2024-04-30 05:38:03 --> ErrorException: Undefined variable $data
+[Method: POST, Route: UserController/register]
+in APPPATH\Controllers\UserController.php on line 38.
+ 1 APPPATH\Controllers\UserController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4e2\\app\\Controllers\\UserController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-30 05:44:35 --> ParseError: syntax error, unexpected token "<", expecting "function" or "const"
+[Method: POST, Route: UserController/register]
+in APPPATH\Controllers\UserController.php on line 8.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('UserController/register', 'POST')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('UserController/register')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('UserController/register')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-30 10:17:43 --> mysqli_sql_exception: php_network_getaddresses: getaddrinfo for your_hostname failed: No such host is known. 
+[Method: GET, Route: UserController/viewusers]
+in APPPATH\Views\viewusers.php on line 18.
+ 1 APPPATH\Views\viewusers.php(18): mysqli->__construct('your_hostname', 'your_username', Object(SensitiveParameterValue), 'your_database')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('viewusers', [], true)
+ 5 APPPATH\Controllers\UserController.php(81): view('viewusers')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->viewusers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-30 10:17:43 --> [Caused by] ErrorException: mysqli::__construct(): php_network_getaddresses: getaddrinfo for your_hostname failed: No such host is known. 
+in APPPATH\Views\viewusers.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__construct(): php_network_getaddresses: getaddrinfo for your_hostname failed: No such host is known. ', 'C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php', 18)
+ 2 APPPATH\Views\viewusers.php(18): mysqli->__construct('your_hostname', 'your_username', Object(SensitiveParameterValue), 'your_database')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('viewusers', [], true)
+ 6 APPPATH\Controllers\UserController.php(81): view('viewusers')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->viewusers()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-30 10:18:33 --> ErrorException: Undefined variable $conn
+[Method: GET, Route: UserController/viewusers]
+in APPPATH\Views\viewusers.php on line 21.
+ 1 APPPATH\Views\viewusers.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php', 21)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('viewusers', [], true)
+ 5 APPPATH\Controllers\UserController.php(81): view('viewusers')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->viewusers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-30 10:18:46 --> ErrorException: Undefined variable $conn
+[Method: GET, Route: UserController/viewusers]
+in APPPATH\Views\viewusers.php on line 41.
+ 1 APPPATH\Views\viewusers.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('viewusers', [], true)
+ 5 APPPATH\Controllers\UserController.php(81): view('viewusers')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->viewusers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-30 10:19:27 --> ParseError: Unclosed '{' on line 21
+[Method: GET, Route: UserController/viewusers]
+in APPPATH\Views\viewusers.php on line 58.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('viewusers', [], true)
+ 3 APPPATH\Controllers\UserController.php(81): view('viewusers')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->viewusers()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-30 10:19:40 --> mysqli_sql_exception: php_network_getaddresses: getaddrinfo for root failed: No such host is known. 
+[Method: GET, Route: UserController/viewusers]
+in APPPATH\Views\viewusers.php on line 18.
+ 1 APPPATH\Views\viewusers.php(18): mysqli->__construct('root', '', Object(SensitiveParameterValue), 'everyday')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('viewusers', [], true)
+ 5 APPPATH\Controllers\UserController.php(81): view('viewusers')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->viewusers()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-30 10:19:40 --> [Caused by] ErrorException: mysqli::__construct(): php_network_getaddresses: getaddrinfo for root failed: No such host is known. 
+in APPPATH\Views\viewusers.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__construct(): php_network_getaddresses: getaddrinfo for root failed: No such host is known. ', 'C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php', 18)
+ 2 APPPATH\Views\viewusers.php(18): mysqli->__construct('root', '', Object(SensitiveParameterValue), 'everyday')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4e2\\app\\Views\\viewusers.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('viewusers', [], true)
+ 6 APPPATH\Controllers\UserController.php(81): view('viewusers')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->viewusers()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

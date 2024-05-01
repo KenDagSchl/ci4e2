@@ -49,6 +49,12 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= base_url('/home/inventory') ?>">Inventory</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url('/UserController/viewusers') ?>">Users</a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="<?= base_url('/UserController/logout') ?>">Logout</a>
+                              </li>
                             </ul>
                             <ul class="navbar-nav">
                             <li class="nav-item">
@@ -63,6 +69,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= base_url('/home/about') ?>"><i class="fas fa-user"></i></a>
                             </li>
+                            
 
                         </ul>
                     </div>

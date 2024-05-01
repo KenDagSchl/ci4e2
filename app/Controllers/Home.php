@@ -40,4 +40,8 @@ class Home extends BaseController
     {
         return view('editproduct');
     }
+    public function register(): string
+    {
+        return view('register');
+    }
 }

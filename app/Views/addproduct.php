@@ -34,6 +34,9 @@
         <label for="description">Description:</label>
         <textarea name="description" id="description"></textarea><br>
 
+        <label for="image_url">Image URL:</label>
+        <input type="text" name="image_url" id="image_url" required><br>
+
         <label for="price">Price:</label>
         <input type="number" name="price" id="price" step="0.01" required><br>
 
@@ -64,6 +67,7 @@
         // Retrieve the form data
         $product_name = $_POST['product_name'];
         $description = $_POST['description'];
+        $image_url = $_POST['image_url'];
         $price = $_POST['price'];
         $stock_qty = $_POST['stock_qty'];
         $size = $_POST['size'];
@@ -80,6 +84,7 @@
         $data = [
             'product_name' => $product_name,
             'description' => $description,
+            'image_url' => $image_url,
             'price' => $price,
             'stock_qty' => $stock_qty,
             'size' => $size,
