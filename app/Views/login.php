@@ -32,7 +32,7 @@
         max-width: 100%;
         height: auto;
     }
-    /* Century Gothic font and black and white button */
+    
     body, input, button {
         font-family: 'Century Gothic', sans-serif;
     }

@@ -1,0 +1,35 @@
+CRITICAL - 2024-05-06 08:42:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "partials/header.php"
+[Method: GET, Route: home/customize]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partials/header.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partials/header', [], true)
+ 3 APPPATH\Views\customizepage.php(35): view('partials/header')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4e2\\app\\Views\\customizepage.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('customizepage', [], true)
+ 7 APPPATH\Controllers\Home.php(21): view('customizepage')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->customize()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-06 12:27:48 --> Error: Class "App\Models\CustomizationModel" not found
+[Method: POST, Route: CustomizationController/process]
+in APPPATH\Controllers\CustomizationController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\CustomizationController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-06 12:33:30 --> ErrorException: Undefined property: App\Controllers\CustomizationController::$form_validation
+[Method: POST, Route: CustomizationController/process]
+in APPPATH\Controllers\CustomizationController.php on line 20.
+ 1 APPPATH\Controllers\CustomizationController.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\CustomizationController::$form_validation', 'C:\\xampp\\htdocs\\ci4e2\\app\\Controllers\\CustomizationController.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CustomizationController->process()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomizationController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

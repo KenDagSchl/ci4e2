@@ -30,4 +30,8 @@ $routes->post('login', 'UserController::login'); // Handle login form submission
 $routes->get('logout', 'UserController::logout');
 $routes->get('home/home', 'Home::home');
 $routes->get('test-session', 'UserController::testSession');
-?>
+$routes->post('customization/process', 'CustomizationController::process');
+$routes->get('customization/table', 'CustomizationController::read');
+$routes->post('/customization/update', 'CustomizationController::update');
+$routes->get('/customization/edit/(:num)', 'CustomizationController::edit/$1');
+$routes->get('/customization/delete/(:num)', 'CustomizationController::delete/$1');
